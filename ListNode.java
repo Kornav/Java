@@ -18,4 +18,9 @@ public class ListNode {
 		value = val;
 		link = null;
 	}
+	public ListNode (String x, int val) {
+		data = x;
+		value = val;
+		link = null;
+	}
 }

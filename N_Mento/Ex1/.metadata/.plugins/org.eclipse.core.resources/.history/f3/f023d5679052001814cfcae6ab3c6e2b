@@ -1,0 +1,7 @@
+public class EE {
+	public static void main(String[] args) {
+		String[][] str = { { "Apple", "Banana" }, { "Cat", "Dog" } };
+
+		System.out.println(str[0][0]);
+	}
+}

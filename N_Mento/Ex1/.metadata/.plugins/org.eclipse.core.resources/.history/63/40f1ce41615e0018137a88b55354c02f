@@ -1,0 +1,64 @@
+import java.util.*;
+public class EE {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String[] moviename = {"Iron man","Thor","With God"};
+		char[][] seat = {
+				{'O','O','O','O','O'},
+				{'O','O','O','O','O'},
+				{'O','O','O','O','O'},
+				{'O','O','O','O','O'},
+				{'O','O','O','O','O'}
+				};
+		PrintMovieList(moviename);
+		while(true) {
+			String choice_moviename = Input_moviename(input);
+			boolean check = Check_movie(moviename, choice_moviename);
+			if(check == false) {
+				System.out.println("다시 선택해주세요.");
+				continue;
+			}
+			else {
+				Showseat(seat);
+				break;
+			}
+		}
+	}
+	
+	public static void PrintMovieList(String[] moviename) {
+		System.out.println("====== Movie List ======");
+		for(int i=0;i<moviename.length;i++) {
+			System.out.println((i+1)+". "+moviename[i]);
+		}
+		System.out.println();
+	}
+	public static String Input_moviename(Scanner in) {
+		String choice_moviename;
+		System.out.println("영화를 선택해주세요.");
+		choice_moviename = in.nextLine();
+		return choice_moviename;
+	}
+	public static boolean Check_movie(String[] moviename, String choice) {
+		boolean bool=false;
+		for(int i=0;i<moviename.length;i++) {
+			if(choice.equals(moviename[i])) {
+				bool = true;
+			}
+		}
+		return bool;
+	}
+	public static void Showseat(char[][] ch) {
+		System.out.println("======== 좌석 ========");
+		System.out.println("    1  2  3  4  5");
+		for(int i=0;i<ch.length;i++) {
+			System.out.print((char)(i+65)+"열 ");
+			for(int j=0;j<ch[0].length;j++) {
+				System.out.print(" "+ch[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+	public static char[][] Input_seat(char[][] ch){
+		
+	}
+}

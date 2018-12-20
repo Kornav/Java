@@ -1,0 +1,14 @@
+import java.util.*;
+public class EE {
+	public static void main(String[] args) {
+		int num1, num2;
+		int sum;
+		Scanner in = new Scanner(System.in);
+		System.out.println("숫자 한개 입력해주세요");
+		num1 = in.nextInt();
+		System.out.println("나머지숫자 한개 입력해주세요");
+		num2 = in.nextInt();
+		sum = num1+num2;
+		System.out.println("합계 : "+sum);
+	}
+}

@@ -1,0 +1,15 @@
+import java.util.*;
+public class Ex5 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 1, y=3;
+		int X1=x++;
+		int X2=++x;
+		int Y1 = --y;
+		int Y2 = y--;
+		System.out.println("X1 = "+X1);
+		System.out.println("X2 = "+X2);
+		System.out.println("Y1 = "+Y1);
+		System.out.println("Y2 = "+Y2);
+	}
+}

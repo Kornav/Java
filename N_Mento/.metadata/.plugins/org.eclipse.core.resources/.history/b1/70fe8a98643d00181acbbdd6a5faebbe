@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class ex2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		
+		String id;
+		String pass;
+		int choice;
+		System.out.println("======================");
+		System.out.println("\t기능 선택\n 1.회원가입\n 2.로그인\n 3.종료");
+		System.out.println("======================");
+		switch()
+		
+		System.out.println("아이디를 입력해주세요 : ");
+	}
+}

@@ -1,0 +1,12 @@
+import java.util.*;
+public class EE {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String[] moviename = {"Iron man","Thor","With God"};
+		String choice_moviename = Input_moviename();
+		
+	}
+	public static String Input_moviename() {
+		
+	}
+}
